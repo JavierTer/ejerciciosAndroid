@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavigationDemo</string>
+    <string name="msj_boton">Navegar</string>
+    <string name="navigation_text">Navegar al 2do fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Estoy en el 2do fragment</string>
+</resources>

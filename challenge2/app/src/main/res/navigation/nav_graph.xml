@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstNavFragment">
+
+    <fragment
+        android:id="@+id/firstNavFragment"
+        android:name="ar.edu.ort.challenge2.FirstNavFragment"
+        android:label="fragment_first_nav"
+        tools:layout="@layout/fragment_first_nav" >
+        <action
+            android:id="@+id/action_firstNavFragment_to_secondNavFragment"
+            app:destination="@id/secondNavFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_firstNavFragment_to_thirdNavFragment"
+            app:destination="@id/thirdNavFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/firstNavFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondNavFragment"
+        android:name="ar.edu.ort.challenge2.SecondNavFragment"
+        android:label="fragment_second_nav"
+        tools:layout="@layout/fragment_second_nav" >
+        <action
+            android:id="@+id/action_secondNavFragment_to_firstNavFragment"
+            app:destination="@id/firstNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdNavFragment"
+        android:name="ar.edu.ort.challenge2.ThirdNavFragment"
+        android:label="fragment_third_nav"
+        tools:layout="@layout/fragment_third_nav" >
+        <action
+            android:id="@+id/action_thirdNavFragment_to_firstNavFragment"
+            app:destination="@id/firstNavFragment" />
+    </fragment>
+</navigation>

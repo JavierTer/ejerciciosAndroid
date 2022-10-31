@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmento1">
+
+    <fragment
+        android:id="@+id/fragmento1"
+        android:name="ar.edu.ort.challenge3.Fragments.Fragmento1"
+        android:label="fragment_fragmento1"
+        tools:layout="@layout/fragment_fragmento1" >
+        <action
+            android:id="@+id/action_f1_to_f2"
+            app:destination="@id/fragmento2" />
+        <action
+            android:id="@+id/action_f1_to_f3"
+            app:destination="@id/fragmento3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento2"
+        android:name="ar.edu.ort.challenge3.Fragments.Fragmento2"
+        android:label="fragment_fragmento2"
+        tools:layout="@layout/fragment_fragmento2" >
+        <action
+            android:id="@+id/action_f2_to_f1"
+            app:destination="@id/fragmento1"
+            app:popUpTo="@id/fragmento1"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="dato"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento3"
+        android:name="ar.edu.ort.challenge3.Fragments.Fragmento3"
+        android:label="fragment_fragmento3"
+        tools:layout="@layout/fragment_fragmento3" >
+        <action
+            android:id="@+id/action_f3_to_f1"
+            app:destination="@id/fragmento1"
+            app:popUpTo="@id/fragmento1"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="unParcelable"
+            app:argType="ar.edu.ort.challenge3.Entities.DatoParcelableNuevo" />
+    </fragment>
+</navigation>

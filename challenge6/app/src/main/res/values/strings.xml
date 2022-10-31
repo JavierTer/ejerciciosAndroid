@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">challenge6</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Buy App</string>
+    <string name="btn_login">Continuar</string>
+
+    <!-- Lista -->
+    <string name="lista_mostrar_boton">Comprar</string>
+
+
+    <!-- Perfil -->
+    <string name="perfil_mostrar_name">Nombre</string>
+    <string name="perfil_mostrar_contraseña">Contraseña</string>
+    <string name="perfil_mostrar_boton">Guardar</string>
+</resources>

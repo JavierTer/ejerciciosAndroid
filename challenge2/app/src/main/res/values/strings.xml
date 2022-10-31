@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">challenge2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_first_fragment">Bienvenido</string>
+    <string name="hello_second_fragment">Usted esta en la pagina 2</string>
+    <string name="hello_third_fragment">Usted esta en la pagina 3</string>
+    <string name="navigate_button_to_2">Navegar hacia la página 2</string>
+    <string name="navigate_button_to_3">Navegar hacia la página 3</string>
+
+
+
+
+
+
+</resources>
